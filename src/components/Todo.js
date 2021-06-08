@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React from "react";
+import { FaTrash } from 'react-icons/fa';
 
 export default function Todo(props) {
   var { children, index, onRemove, onTaskClick, isChecked } = props;
@@ -12,7 +13,7 @@ export default function Todo(props) {
           onRemove(index);
         }}
       >
-        <ion-icon name="trash"></ion-icon>
+        <FaTrash color="white" />
       </TrashContainer>
       {children}
     </Container>
